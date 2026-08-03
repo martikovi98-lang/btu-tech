@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homework Page</title>
+</head>
+<body>
+
+    <h1>My Homework Page</h1>
+    <p>
+        <a href="#hobby">Schedule</a> | 
+        <a href="#hobby">Gallery</a> | 
+        <a href="#contact">Contact</a>
+    </p>
+
+    <h2 id="hobby">My Favorite Hobby</h2>
+    <p>I love traveling and exploring new places. Below is one of my favorite pictures from my last trip:</p>
+    <img src="https://picsum.photos/200/300" alt="Beautiful landscape scenery">
+
+    <h2>My Weekly Class Schedule</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr bgcolor="red">
+                <th>Day</th>
+                <th>8:00 - 10:00</th>
+                <th>10:00 - 12:00</th>
+                <th>1:00 - 3:00</th>
+                <th>3:00 - 5:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="green">
+                <td>Monday</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td colspan="2">Project Work</td>
+            </tr>
+            <tr bgcolor="yellow">
+                <td>Tuesday</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Sports</td>
+                <td>Free Study</td>
+            </tr>
+            <tr bgcolor="purple">
+                <td>Wednesday</td>
+                <td>Computer Lab</td>
+                <td>Math</td>
+                <td>Art</td>
+                <td>Science</td>
+            </tr>
+            <tr bgcolor="pink">
+                <td>Thursday</td>
+                <td>English</td>
+                <td>Science</td>
+                <td colspan="2">Field Trip</td>
+            </tr>
+            <tr bgcolor="skyblue">
+                <td>Friday</td>
+                <td>Math</td>
+                <td>Computer Lab</td>
+                <td>Music</td>
+                <td>Sports</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="contact">Contact Me</h2>
+    <form action="#">
+        <p>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name">
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        </p>
+
+        <p>
+            Favorite Subject:<br>
+            <input type="radio" id="math" name="subject" value="Math">
+            <label for="math">Math</label>
+
+            <input type="radio" id="science" name="subject" value="Science">
+            <label for="science">Science</label>
+
+            <input type="radio" id="english" name="subject" value="English">
+            <label for="english">English</label>
+        </p>
+
+        <p>
+            <label for="color">Pick a color you like:</label>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+            <input type="submit" value="Send Message">
+        </p>
+    </form>
+
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="https://www.netflix.com/ge/">See My Hobby</a></li>
+        <li><a href="#schedule">View My Schedule</a></li>
+        <li><a href="mailto:martikovi98@gmail.com">Contact Me</a></li>
+    </ul>
+
+</body>
+</html>
