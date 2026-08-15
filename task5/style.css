@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+body {
+  background-color: #5593b4; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;        
+  width: 500px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #9e9e9e;
+  border-radius: 50%;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;       
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #0f1419;
+}
+
+.verified-icon {
+  width: 18px;
+  height: 18px;
+  color: #1d9bf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verified-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.username {
+  color: #536471;
+  font-size: 14px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.subscribe-btn {
+  background-color: #0f1419;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #272c30;
+}
+
+/* SVG 3 Dots Icon */
+.more-icon {
+  width: 20px;
+  height: 20px;
+  color: #0f1419;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.more-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* 4. Post Text */
+.post-text {
+  font-size: 17px;
+  line-height: 1.4;
+  color: #0f1419;
+}
+
+.hashtag {
+  color: #1d9bf0;
+  text-decoration: none;
+  display: block;
+  margin-top: 4px;
+}
+
+.hashtag:hover {
+  text-decoration: underline;
+}
+
+/* 5. Media Box */
+.post-media {
+  width: 100%;
+  height: 280px;
+  background-color: #9e9e9e;
+  border-radius: 16px;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #536471;
+  font-size: 14px;
+}
+
+.views {
+  font-weight: 600;
+  color: #0f1419;
+}
+
+.post-meta .dot {
+  width: 4px;
+  height: 4px;
+  color: #536471;
+  display: flex;
+  align-items: center;
+}
+
+.post-meta .dot svg {
+  width: 100%;
+  height: 100%;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding-top: 4px;
+  color: #536471;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.post-actions .icon {
+  width: 18px;
+  height: 18px;
+  color: #536471;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.post-actions .icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.action-item:hover {
+  color: #1d9bf0;
+}
+
+.action-item:hover .icon {
+  color: #1d9bf0;
+}
