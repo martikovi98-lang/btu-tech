@@ -1,0 +1,24 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div>
+    <input type="email" formControlName="email" placeholder="Email" />
+    @if (form.controls.email.invalid && form.controls.email.touched) {
+      <p>Invalid email</p>
+    }
+  </div>
+
+  <div>
+    <input type="password" formControlName="password" placeholder="Password" />
+    @if (form.controls.password.invalid && form.controls.password.touched) {
+      <p>Password must have at least one uppercase character and at least one digit</p>
+    }
+  </div>
+
+  <div>
+    <input type="text" formControlName="nickname" placeholder="Nickname" />
+    @if (form.controls.nickname.invalid && form.controls.nickname.touched) {
+      <p>Nickname minimum length is 8 and must end with a digit</p>
+    }
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Register</button>
+</form>
