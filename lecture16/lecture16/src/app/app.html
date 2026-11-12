@@ -1,0 +1,16 @@
+@for (item of products; track item.id) {
+  <div>
+    <h3>{{ item.name }}</h3>
+
+    @if (item.discountPrice) {
+      <p>
+        <del>${{ item.price }}</del>
+        <b> ${{ item.discountPrice }}</b>
+      </p>
+    } @else {
+      <p>${{ item.price }}</p>
+    }
+  </div>
+} @empty {
+  <p>No products available.</p>
+}
